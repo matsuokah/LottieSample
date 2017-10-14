@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9149AD4E1F919BFA009F6A79 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9149AD481F919B8E009F6A79 /* Lottie.framework */; };
+		9149AD4F1F919BFA009F6A79 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9149AD481F919B8E009F6A79 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9149AD521F919CD7009F6A79 /* Hamburger.json in Resources */ = {isa = PBXBuildFile; fileRef = 9149AD511F919C73009F6A79 /* Hamburger.json */; };
+		9149AD541F919F34009F6A79 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9149AD531F919F34009F6A79 /* UIView+Constraint.swift */; };
+		9149AD561F91A9AA009F6A79 /* LottieSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9149AD551F91A9AA009F6A79 /* LottieSwitchView.swift */; };
 		91875A291F9197CE00343D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91875A281F9197CE00343D18 /* AppDelegate.swift */; };
 		91875A2B1F9197CE00343D18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91875A2A1F9197CE00343D18 /* ViewController.swift */; };
 		91875A2E1F9197CE00343D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91875A2C1F9197CE00343D18 /* Main.storyboard */; };
@@ -14,7 +19,25 @@
 		91875A331F9197CE00343D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91875A311F9197CE00343D18 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9149AD501F919BFA009F6A79 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9149AD4F1F919BFA009F6A79 /* Lottie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9149AD481F919B8E009F6A79 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		9149AD511F919C73009F6A79 /* Hamburger.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Hamburger.json; sourceTree = "<group>"; };
+		9149AD531F919F34009F6A79 /* UIView+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
+		9149AD551F91A9AA009F6A79 /* LottieSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieSwitchView.swift; sourceTree = "<group>"; };
 		91875A251F9197CE00343D18 /* LottieSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91875A281F9197CE00343D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91875A2A1F9197CE00343D18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +52,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9149AD4E1F919BFA009F6A79 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9149AD471F919B8D009F6A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9149AD481F919B8E009F6A79 /* Lottie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9149AD4A1F919BDA009F6A79 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9149AD511F919C73009F6A79 /* Hamburger.json */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		91875A1C1F9197CE00343D18 = {
 			isa = PBXGroup;
 			children = (
 				91875A271F9197CE00343D18 /* LottieSample */,
 				91875A261F9197CE00343D18 /* Products */,
+				9149AD471F919B8D009F6A79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +95,11 @@
 		91875A271F9197CE00343D18 /* LottieSample */ = {
 			isa = PBXGroup;
 			children = (
+				9149AD4A1F919BDA009F6A79 /* Support Files */,
 				91875A281F9197CE00343D18 /* AppDelegate.swift */,
+				9149AD551F91A9AA009F6A79 /* LottieSwitchView.swift */,
 				91875A2A1F9197CE00343D18 /* ViewController.swift */,
+				9149AD531F919F34009F6A79 /* UIView+Constraint.swift */,
 				91875A2C1F9197CE00343D18 /* Main.storyboard */,
 				91875A2F1F9197CE00343D18 /* Assets.xcassets */,
 				91875A311F9197CE00343D18 /* LaunchScreen.storyboard */,
@@ -74,6 +118,7 @@
 				91875A211F9197CE00343D18 /* Sources */,
 				91875A221F9197CE00343D18 /* Frameworks */,
 				91875A231F9197CE00343D18 /* Resources */,
+				9149AD501F919BFA009F6A79 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9149AD521F919CD7009F6A79 /* Hamburger.json in Resources */,
 				91875A331F9197CE00343D18 /* LaunchScreen.storyboard in Resources */,
 				91875A301F9197CE00343D18 /* Assets.xcassets in Resources */,
 				91875A2E1F9197CE00343D18 /* Main.storyboard in Resources */,
@@ -136,8 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9149AD541F919F34009F6A79 /* UIView+Constraint.swift in Sources */,
 				91875A2B1F9197CE00343D18 /* ViewController.swift in Sources */,
 				91875A291F9197CE00343D18 /* AppDelegate.swift in Sources */,
+				9149AD561F91A9AA009F6A79 /* LottieSwitchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +324,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 263N9Q866N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LottieSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.matsuokah.LottieSample;
@@ -291,6 +343,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 263N9Q866N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LottieSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.matsuokah.LottieSample;
